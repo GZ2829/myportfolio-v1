@@ -1,0 +1,81 @@
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f1d38bbdda690e28a81673c06325075&auto=format&fit=crop&w=1489&q=80);
+    background-position-y: 59%;
+    
+}
+
+.homename{
+    color: red;
+    font-size: 80px;
+    grid-column: 1/6;
+    text-align: center;
+    grid-row: 3/4;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.homedescription{
+    grid-column: 1/6;
+    text-align: center;
+    grid-row: 4/5;
+    font-size: 35px;
+    padding-left: 3%;
+    color: white;
+    margin-top: 1%;
+}
+
+.homebutton{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
+    opacity: .5;
+    transition-duration: .4s
+}
+
+.homebutton:hover{
+    opacity: 1;
+    cursor: pointer;
+    rotate: (-45deg);
+}
+
+.navbar{
+    grid-column: 7/-1;
+    grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
+    background: rgba(41, 31, 128, 0.878);
+    width: 75%;
+    margin-left: 25%;
+    text-align: center;
+    justify-content: space-evenly;
+    animation-name: sidemenu;
+    animation-duration: 1s;
+}
+.navbar p{
+    color: bisque;
+    font-size: 35px;
+    margin: 0
+}
+
+
+
+.navbar a{
+    font-size: 20px;
+    text-decoration: none;
+    color: beige
+}
+.navbar a:hover{
+    text-decoration: underline
+}
+
+@keyframes sidemenu{
+    0%{opacity: 0;}
+    100%{opacity: 100}
+}

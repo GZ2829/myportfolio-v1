@@ -1,0 +1,19 @@
+<div class="home">
+  
+<h1 class="homename">Gregory Zucchero</h1>
+<h3 class="homedescription">Web Developer in the MERN/MEAN Stack</h3>
+
+<img (click)="toggleMenu()" class="homebutton" alt="Noimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Menu-thin-circular-outlined-button.svg/768px-Menu-thin-circular-outlined-button.svg.png" />
+
+<nav *ngIf=menu class="navbar">
+
+    <a routerLink='/'>Home</a>
+    <a routerLink='/about'>About</a>
+    <p>Projects:</p>
+    <a routerLink='/crypto-portfolio'>Crypto Portfolio</a>
+    <a routerLink='/transport-consolidated'>Transport Consolidated</a>
+    <a routerLink='/business-website'>Business Website</a>
+    
+</nav>
+
+</div>
