@@ -1,0 +1,9 @@
+.transportpage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1506306460327-3164753b74c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c73b02806f994256e0a11d7340db81f&auto=format&fit=crop&w=2734&q=80);
+    background-position-y: 45%;
+    background-position-x: 70%;
+}

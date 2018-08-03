@@ -1,0 +1,55 @@
+.aboutpage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=2850&q=80);
+    background-position-y: 59%;
+}
+.aboutblurb{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background: rgba(0, 0, 0, 0.892);
+    grid-column: 1/7;
+    grid-row: 2/5;
+    height: 120%;
+    margin-left: 15%
+}
+.para1{
+    position: initial;
+    line-height: 1.7em;
+    font-size: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    color: bisque;
+    grid-column: 2/-1;
+    grid-row: 1/2;
+}
+.para2{
+    line-height: 1.7em;
+    font-size: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    color: bisque;
+    grid-column: 1/-1;
+    grid-row: 2/4;
+}
+
+.title{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: bisque
+}
+.headshot{
+    padding-left: 5%;
+    padding-top: 5%;
+    height: 200px;
+    width: 250px;
+    border-radius: 50%;
+}

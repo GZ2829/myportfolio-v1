@@ -1,0 +1,16 @@
+<div class="transportpage">
+
+    <img (click)="toggleMenu()" class="homebutton" alt="Noimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Menu-thin-circular-outlined-button.svg/768px-Menu-thin-circular-outlined-button.svg.png" />
+  
+
+    <nav *ngIf=menu class="navbar">
+        <img class="closemenu" (click)="toggleMenu()" src="https://cdn3.iconfinder.com/data/icons/buttons/512/Icon_12-512.png"/>
+        <a routerLink='/'>Home</a>
+        <a routerLink='/about'>About</a>
+        <p>Projects:</p>
+        <a routerLink='/crypto-portfolio'>Crypto Portfolio</a>
+        <a routerLink='/transport-consolidated'>Transport Consolidated</a>
+        <a routerLink='/business-website'>Business Website</a>
+        
+    </nav>
+</div>
