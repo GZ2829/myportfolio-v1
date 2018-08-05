@@ -39,8 +39,12 @@ html, body{
 }
 .navbar p{
     color: bisque;
-    font-size: 35px;
-    margin: 0
+    font-size: 25px;
+    margin: 0;
+}
+.navbar p:hover{
+    cursor: pointer;
+    text-decoration: underline
 }
 .closemenu{
     font-size: 20px;
@@ -51,19 +55,51 @@ html, body{
     width: 30%;
     align-self: center;
 }
+.projects{
+    color: lightblue;
+    font-size: 20px;
+    text-decoration: none;
+}
 
 
-
-.navbar a{
+.menuitem{
     font-size: 20px;
     text-decoration: none;
     color: beige
 }
-.navbar a:hover{
+.menuitem:hover{
     text-decoration: underline
 }
 
 @keyframes sidemenu{
     0%{ position: relative; right: -25%}
     100%{ position: relative; right: 0%}
+}
+
+#project1{
+    animation-name: project1;
+    animation-duration: 1s;
+}
+
+@keyframes project1{
+    0%{ position: relative; top: -10%}
+    100%{ position: relative; top: 0%}
+}
+#project2{
+    animation-name: project2;
+    animation-duration: 1s;
+}
+
+@keyframes project2{
+    0%{ position: relative; top: -20%}
+    100%{ position: relative; top: 0%}
+}
+#project3{
+    animation-name: project3;
+    animation-duration: 1s;
+}
+
+@keyframes project3{
+    0%{ position: relative; top: -25%}
+    100%{ position: relative; top: 0%}
 }

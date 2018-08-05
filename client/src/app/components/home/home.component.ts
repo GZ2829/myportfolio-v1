@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
     menu: boolean = false;
+    projects: boolean = false
 
   constructor() { }
 
@@ -16,4 +17,7 @@ export class HomeComponent implements OnInit {
   toggleMenu(){
     this.menu = !this.menu;
     }
+  toggleProjects(){
+    this.projects = !this.projects
+  }
 }

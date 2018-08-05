@@ -1,3 +1,39 @@
-<p>
-  contact works!
-</p>
+
+
+
+
+<div class="contactpage">
+
+    <img (click)="toggleMenu()" class="homebutton" alt="Noimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Menu-thin-circular-outlined-button.svg/768px-Menu-thin-circular-outlined-button.svg.png" />
+  
+    
+    <nav *ngIf=menu class="navbar">
+        <img class="closemenu" (click)="toggleMenu()" src="https://cdn3.iconfinder.com/data/icons/buttons/512/Icon_12-512.png"/>
+        <a routerLink='/'>Home</a>
+        <a routerLink='/about'>About</a>
+        <a routerLink='/contact'>Contact</a>
+        <p>Projects:</p>
+        <a routerLink='/crypto-portfolio'>Crypto Portfolio</a>
+        <a routerLink='/transport-consolidated'>Transport Consolidated</a>
+        <a routerLink='/business-website'>Business Website</a>
+        
+    </nav>
+      <h1>Contact Me:</h1>
+    <form method="POST" action="send" id='form' ng-submit="sendMail()">
+            <label for="contactName">Name: </label>
+                <input type="text" name="contactName" ng-model="nodemailer.name" required autofocus>
+                <br/>
+                <br/>
+            <label for="contactEmail">Email: </label>
+                <input type="email" name="contactEmail" ng-model="nodemailer.email" required>
+                <br>
+                <br/>
+            <label for="contactMessage">Message: </label>
+                <textarea type="text-area" name="contactMessage" ng-model="nodemailer.message" required ></textarea>
+                <br/>
+                <br/>
+                <button type="submit" class="btn btn-success">Send</button>
+                {{msg}}
+    </form>
+
+</div>
