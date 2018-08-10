@@ -5,9 +5,9 @@
 
 <img (click)="toggleMenu()" class="homebutton" alt="Noimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Menu-thin-circular-outlined-button.svg/768px-Menu-thin-circular-outlined-button.svg.png" />
 
-<nav *ngIf=menu class="navbar">
+<nav *ngIf=menu class="navbar" id="menu">
 
-    <img class="closemenu" (click)="toggleMenu()" src="https://cdn3.iconfinder.com/data/icons/buttons/512/Icon_12-512.png"/>
+    <img class="closemenu" (click)="toggleMenuClose()" src="https://cdn3.iconfinder.com/data/icons/buttons/512/Icon_12-512.png"/>
     <a class='menuitem' routerLink='/'>Home</a>
     <a class='menuitem' routerLink='/about'>About</a>
     <a class='menuitem' (click)='toggleProjects()'>Projects:</a> 

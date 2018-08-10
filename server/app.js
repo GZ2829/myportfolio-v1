@@ -34,10 +34,19 @@ app.post('/send', (req,res)=>{
     <p>${req.body.contactMessage}</p>`
 
     nodemailer.createTestAccount((err, account) => {
-        // create reusable transporter object using the default SMTP transport
-       
+        let transporter = nodemailer.createTransport({
+            host: 'smtp-mail.outlook.com',
+            port: 587,
+            secure: false, 
+            auth: {
+                
+            },
+            tls:{
+                rejectUnauthorized: false,
+            }
+        });
     
-        // setup email data with unicode symbols
+       
         let mailOptions = {
             from: '"Node Mail Contact" <gregdev28@outlook.com>', 
             to: 'Greg Zucchero, gzucchero24@gmail.com', 

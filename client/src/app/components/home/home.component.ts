@@ -17,6 +17,12 @@ export class HomeComponent implements OnInit {
   toggleMenu(){
     this.menu = !this.menu;
     }
+    toggleMenuClose(){
+       const close = document.getElementById('menu').style.animationName = 'sidemenu1'
+       if(close){
+       }
+      
+    }
   toggleProjects(){
     this.projects = !this.projects
   }

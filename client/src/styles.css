@@ -37,6 +37,20 @@ html, body{
     animation-duration: 1s;
     z-index: 1
 }
+.navbar1{
+    grid-column: 7/-1;
+    grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    width: 75%;
+    margin-left: 25%;
+    text-align: center;
+    justify-content: space-around;
+    animation-name: sidemenu1;
+    animation-duration: 1s;
+    z-index: 1
+}
 .navbar p{
     color: bisque;
     font-size: 25px;
@@ -74,6 +88,10 @@ html, body{
 @keyframes sidemenu{
     0%{ position: relative; right: -25%}
     100%{ position: relative; right: 0%}
+}
+@keyframes sidemenu1{
+    0%{ position: relative; right: 0%}
+    100%{ position: relative; right: -25%}
 }
 
 #project1{
