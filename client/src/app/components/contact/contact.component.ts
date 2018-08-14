@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Http, HTTP_PROVIDERS } from '@angular/http';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
-  viewProviders: [HTTP_PROVIDERS],
+  
   
 })
 export class ContactComponent implements OnInit {
@@ -17,9 +17,9 @@ export class ContactComponent implements OnInit {
   toggleMenu(){
     this.menu = !this.menu;
     }
-    submitData(data){
-        this.http.post("/send", data)
-    }
+    // submitData(data){
+    //     this.http.post("/send", data)
+    // }
   
     
     
