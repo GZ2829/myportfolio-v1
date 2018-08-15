@@ -19,7 +19,7 @@ app.use('../client/src/app/components/contact/contact.component.html', express.s
 
 
 app.listen(4040, () =>
-    console.log('Up and Running on 4200')
+    console.log('Up and Running on 4040')
 );
 
 app.post('/send', (req,res)=>{
@@ -28,7 +28,7 @@ app.post('/send', (req,res)=>{
     <h3>Contact Details</h3>
     <ul>
     <li>Name: ${req.body.contactName}</li>
-    <li>Email:${req.body.contactEmail}</li>
+    <li>Email: ${req.body.contactEmail}</li>
     </ul>
     <h4>Message:</h4>
     <p>${req.body.contactMessage}</p>`
@@ -39,7 +39,7 @@ app.post('/send', (req,res)=>{
             port: 587,
             secure: false, 
             auth: {
-                
+               
             },
             tls:{
                 rejectUnauthorized: false,
@@ -50,7 +50,7 @@ app.post('/send', (req,res)=>{
         let mailOptions = {
             from: '"Node Mail Contact" <gregdev28@outlook.com>', 
             to: 'Greg Zucchero, gzucchero24@gmail.com', 
-            subject: 'New message from portfolio site', 
+            subject: 'New message from Portfolio Site', 
             text: '', 
             html: output 
         };
