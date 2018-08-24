@@ -28,3 +28,24 @@
     margin-top: 1%;
 }
 
+@media (max-width: 1024px) {
+   .home{
+       background-size: cover;
+       background-position-x: 40%;
+   }
+
+   .homename{
+       grid-column: 1/7;
+       text-align: center;
+       align-self: center;
+   }
+
+   .homedescription{
+    grid-column: 1/8;
+     margin-top: 0;
+     padding-left: 8%;
+     text-align: left;
+     
+   }
+    
+}

@@ -195,3 +195,17 @@ html, body{
 .projectlink:hover{
     color: firebrick
 }
+
+@media (max-width: 1024px) {
+   .navbar{
+       width: 100%;
+       grid-column: 6/-1;
+   }
+   .menuitem{
+       font-size: 30px;
+       text-align: center;
+       padding-right: 15%;
+   }
+
+
+   }
