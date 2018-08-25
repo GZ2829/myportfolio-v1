@@ -17,9 +17,12 @@ export class ContactComponent implements OnInit {
   toggleMenu(){
     this.menu = !this.menu;
     }
-    // submitData(data){
-    //     this.http.post("/send", data)
-    // }
+    sendMail(){
+      var data = ({
+        
+    });
+    
+    }
   
     
     
