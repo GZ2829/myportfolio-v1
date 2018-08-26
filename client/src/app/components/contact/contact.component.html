@@ -19,20 +19,19 @@
         
     </nav>
       <h1>Contact Me:</h1>
-    <form method="POST" id='form' ng-submit="sendMail()">
+    <form id='form'>
             <label for="contactName">Name: </label>
-                <input type="text" name="contactName" ng-model="nodemailer.name" required autofocus>
+                <input #name type="text" name="contactName" ng-model="nodemailer.name" required autofocus>
                 <br/>
                 <br/>
             <label for="contactEmail">Email: </label>
-                <input type="email" name="contactEmail" ng-model="nodemailer.email" required>
+                <input #email type="email" name="contactEmail" ng-model="nodemailer.email" required>
                 <br>
                 <br/>
             <label for="contactMessage">Message: </label>
-                <textarea type="text-area" name="contactMessage" ng-model="nodemailer.message" required ></textarea>
+                <textarea #message type="text-area" name="contactMessage" ng-model="nodemailer.message" required ></textarea>
                 <br/>
-                <br/>
-                <button type="submit" class="btn btn-success">Send</button>
+                <button type="submit" (click)="sendMail(name.value, email.value, message.value)" class="btn btn-success">Send</button>
                 {{msg}}
     </form>
 

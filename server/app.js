@@ -15,7 +15,27 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 // Static Folder
-app.use('../client/src/app/components/contact/contact.component.html', express.static(path.join(__dirname, 'contact')))
+// app.use('../client/src/app/components/contact/contact.component.html', express.static(path.join(__dirname, 'contact')))
+app.use(function (req, res, next) {
+
+    // Website you wish to allow to connect
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+
+    // Request methods you wish to allow
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+
+    // Request headers you wish to allow
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+    // Set to true if you need the website to include cookies in the requests sent
+    // to the API (e.g. in case you use sessions)
+    res.setHeader('Access-Control-Allow-Credentials', true);
+
+    // Pass to next layer of middleware
+    next();
+});
+
+
 
 
 app.listen(4040, () =>
@@ -27,11 +47,11 @@ app.post('/send', (req,res)=>{
     <h1>You have a new message</h1>
     <h3>Contact Details</h3>
     <ul>
-    <li>Name: ${req.body.contactName}</li>
-    <li>Email: ${req.body.contactEmail}</li>
+    <li>Name: ${req.body.name}</li>
+    <li>Email: ${req.body.email}</li>
     </ul>
     <h4>Message:</h4>
-    <p>${req.body.contactMessage}</p>`
+    <p>${req.body.message}</p>`
 
     nodemailer.createTestAccount((err, account) => {
         let transporter = nodemailer.createTransport({
@@ -39,7 +59,7 @@ app.post('/send', (req,res)=>{
             port: 587,
             secure: false, 
             auth: {
-                
+               
             },
             tls:{
                 rejectUnauthorized: false,
