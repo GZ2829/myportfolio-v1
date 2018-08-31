@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const path = require('path')
 const nodemailer = require('nodemailer');
+const env = require('dotenv')
+
+env.config()
 
 const app = express();
 
@@ -59,7 +62,8 @@ app.post('/send', (req,res)=>{
             port: 587,
             secure: false, 
             auth: {
-               
+                user: process.env.DB_USER,
+                pass: process.env.DB_PASS
             },
             tls:{
                 rejectUnauthorized: false,

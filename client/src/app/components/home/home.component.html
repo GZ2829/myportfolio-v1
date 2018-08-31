@@ -7,7 +7,7 @@
 
 <nav *ngIf=menu class="navbar" id="menu">
 
-    <img class="closemenu" (click)="toggleMenuClose()" src="https://cdn3.iconfinder.com/data/icons/buttons/512/Icon_12-512.png"/>
+    <a href=# class="closemenu" id='menu' (click)="toggleMenu()">X</a>
     <a class='menuitem' routerLink='/'>Home</a>
     <a class='menuitem' routerLink='/about'>About</a>
     <a class='menuitem' (click)='toggleProjects()'>Projects:</a> 

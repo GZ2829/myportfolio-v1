@@ -1,13 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger,state,style,transition,animate,keyframes } from '@angular/animations'
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  animations: [
+    trigger('awesomeAnimation', [
+
+
+    ])
+  ]
 })
 export class HomeComponent implements OnInit {
     menu: boolean = false;
     projects: boolean = false
+
+  
 
   constructor() { }
 
@@ -15,10 +24,14 @@ export class HomeComponent implements OnInit {
     
   }
   toggleMenu(){
+    document.getElementById('menu').className = 'navbar1'
+    
     this.menu = !this.menu;
     }
     toggleMenuClose(){
-       const close = document.getElementById('menu')
+      const close = () =>{
+        document.getElementById('menu').className = 'navbar1'
+      }
   
     }
   toggleProjects(){

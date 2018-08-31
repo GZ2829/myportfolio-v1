@@ -32,7 +32,7 @@ html, body{
     width: 75%;
     margin-left: 25%;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
     animation-name: sidemenu;
     animation-duration: 1s;
     z-index: 1
@@ -46,7 +46,7 @@ html, body{
     width: 75%;
     margin-left: 25%;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     animation-name: sidemenu1;
     animation-duration: 1s;
     z-index: 1
@@ -63,11 +63,7 @@ html, body{
 .closemenu{
     font-size: 20px;
     position: relative;
-    top: -5px;
-    right: -5px;
-    height: 10%;
-    width: 30%;
-    align-self: center;
+    text-align: right;
 }
 .projects{
     color: lightblue;

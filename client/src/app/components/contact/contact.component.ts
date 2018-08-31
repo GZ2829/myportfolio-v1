@@ -12,6 +12,7 @@ import { HttpClient } from '@angular/common/http'
 })
 export class ContactComponent implements OnInit {
     menu: boolean = false;
+    success: string = null;
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
@@ -28,9 +29,16 @@ export class ContactComponent implements OnInit {
         message: message
 
       }
-      console.log(data)
+      
        return this.http.post(`${url}/send`, data, )
-       .subscribe(res => console.log('done'))
+       .subscribe(err => {
+         if(err){
+          this.success === 'Email Failed'
+         }
+         else{
+           this.success === 'Email Sent Successfully'
+         }
+       })
     
     }
   
