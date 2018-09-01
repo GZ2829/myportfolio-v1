@@ -24,14 +24,12 @@ export class HomeComponent implements OnInit {
     
   }
   toggleMenu(){
-    document.getElementById('menu').className = 'navbar1'
+  
     
     this.menu = !this.menu;
     }
     toggleMenuClose(){
-      const close = () =>{
-        document.getElementById('menu').className = 'navbar1'
-      }
+    
   
     }
   toggleProjects(){
