@@ -1,14 +1,34 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger,state,style,transition,animate,keyframes } from '@angular/animations'
+import { trigger,style,transition,animate } from '@angular/animations'
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [
-    trigger('awesomeAnimation', [
-
-
+    trigger('slideInOut', [
+      transition(':enter', [
+        style({transform: 'translateX(100%)'}),
+        animate('600ms ease-in', style({transform: 'translateX(0%)'}))
+      ]),
+      transition(':leave', [
+        animate('600ms ease-in', style({transform: 'translateX(100%)'}))
+      ])
+    ]),
+    trigger('project1', [
+      transition(':leave', [
+        animate('300ms ease-in', style({transform: 'translateY(-300%)'}))
+      ])
+    ]),
+    trigger('project2', [
+      transition(':leave', [
+        animate('650ms ease-in', style({transform: 'translateY(-500%)'}))
+      ])
+    ]),
+    trigger('project3', [
+      transition(':leave', [
+        animate('1000ms ease-in', style({transform: 'translateY(-700%)'}))
+      ])
     ])
   ]
 })
@@ -24,14 +44,9 @@ export class HomeComponent implements OnInit {
     
   }
   toggleMenu(){
-  
-    
     this.menu = !this.menu;
-    }
-    toggleMenuClose(){
-    
-  
-    }
+  }
+
   toggleProjects(){
     this.projects = !this.projects
   }

@@ -11,15 +11,17 @@
 <p class="para2">In today's technological world, it is important for developers to have the ability to adapt and implement the newest technoliges to stay ahead in the web-development space. Styles, designs and languages can become obselete very quickly and it is important to hire people who understand this and are passionate about it to always be in the loop. On this site you will find a few examples of my previous work and the ability to contact me if you have questions; thank you for your time.</p>
 </div>
 
-<nav *ngIf=menu class="navbar">
-    <img class="closemenu" (click)="toggleMenu()" src="https://cdn3.iconfinder.com/data/icons/buttons/512/Icon_12-512.png"/>
-    <a routerLink='/'>Home</a>
-    <a routerLink='/about'>About</a>
-    <a routerLink='/contact'>Contact</a>
-    <p>Projects:</p>
-    <a routerLink='/crypto-portfolio'>Crypto Portfolio</a>
-    <a routerLink='/transport-consolidated'>Transport Consolidated</a>
-    <a routerLink='/business-website'>Business Website</a>
+<nav *ngIf=menu [@slideInOut] class="navbar" id="menu">
+
+    <a href=# class="closemenu" id='menu' (click)="toggleMenu()">X</a>
+    <a class='menuitem' routerLink='/'>Home</a>
+    <a class='menuitem' routerLink='/about'>About</a>
+    <a class='menuitem' (click)='toggleProjects()'>Projects:</a> 
+    <a id='project1' class="projects" *ngIf=projects [@project1] routerLink='/crypto-portfolio'>Crypto Portfolio</a>
+    <a id='project2' class="projects" *ngIf=projects [@project2] routerLink='/transport-consolidated'>Transport Consolidated</a>
+    <a id='project3' class="projects" *ngIf=projects [@project3] routerLink='/business-website'>Business Website</a>
+    <a  class='menuitem' routerLink='/contact'>Contact</a>
+    
     
 </nav>
 </div>

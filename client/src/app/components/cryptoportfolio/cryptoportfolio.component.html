@@ -18,15 +18,17 @@
     </div>
   
 
-    <nav *ngIf=menu class="navbar">
-        <img class="closemenu" (click)="toggleMenu()" src="https://cdn3.iconfinder.com/data/icons/buttons/512/Icon_12-512.png"/>
-        <a routerLink='/'>Home</a>
-        <a routerLink='/about'>About</a>
-        <a routerLink='/contact'>Contact</a>
-        <p>Projects:</p>
-        <a routerLink='/crypto-portfolio'>Crypto Portfolio</a>
-        <a routerLink='/transport-consolidated'>Transport Consolidated</a>
-        <a routerLink='/business-website'>Business Website</a>
+    <nav *ngIf=menu [@slideInOut] class="navbar" id="menu">
+
+        <a href=# class="closemenu" id='menu' (click)="toggleMenu()">X</a>
+        <a class='menuitem' routerLink='/'>Home</a>
+        <a class='menuitem' routerLink='/about'>About</a>
+        <a class='menuitem' (click)='toggleProjects()'>Projects:</a> 
+        <a id='project1' class="projects" *ngIf=projects [@project1] routerLink='/crypto-portfolio'>Crypto Portfolio</a>
+        <a id='project2' class="projects" *ngIf=projects [@project2] routerLink='/transport-consolidated'>Transport Consolidated</a>
+        <a id='project3' class="projects" *ngIf=projects [@project3] routerLink='/business-website'>Business Website</a>
+        <a  class='menuitem' routerLink='/contact'>Contact</a>
+        
         
     </nav>
 </div>

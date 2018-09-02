@@ -32,11 +32,12 @@ html, body{
     width: 75%;
     margin-left: 25%;
     text-align: center;
-    justify-content: space-between;
-    animation-name: sidemenu;
-    animation-duration: 1s;
+    justify-content: space-around;
+    /* animation-name: sidemenu;
+    animation-duration: 1s; */
     z-index: 1
 }
+
 .navbar1{
     grid-column: 7/-1;
     grid-row: 1/-1;
@@ -46,7 +47,7 @@ html, body{
     width: 75%;
     margin-left: 25%;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     animation-name: sidemenu1;
     animation-duration: 1s;
     z-index: 1
@@ -81,14 +82,6 @@ html, body{
     text-decoration: underline
 }
 
-@keyframes sidemenu{
-    0%{ position: relative; right: -25%}
-    100%{ position: relative; right: 0%}
-}
-@keyframes sidemenu1{
-    0%{ position: relative; right: 0%}
-    100%{ position: relative; right: -25%}
-}
 
 #project1{
     animation-name: project1;

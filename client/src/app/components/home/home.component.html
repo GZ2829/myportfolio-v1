@@ -5,15 +5,15 @@
 
 <img (click)="toggleMenu()" class="homebutton" alt="Noimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Menu-thin-circular-outlined-button.svg/768px-Menu-thin-circular-outlined-button.svg.png" />
 
-<nav *ngIf=menu class="navbar" id="menu">
+<nav *ngIf=menu [@slideInOut] class="navbar" id="menu">
 
     <a href=# class="closemenu" id='menu' (click)="toggleMenu()">X</a>
     <a class='menuitem' routerLink='/'>Home</a>
     <a class='menuitem' routerLink='/about'>About</a>
     <a class='menuitem' (click)='toggleProjects()'>Projects:</a> 
-    <a id='project1'  class="projects" *ngIf=projects routerLink='/crypto-portfolio'>Crypto Portfolio</a>
-    <a id='project2' class="projects" *ngIf=projects routerLink='/transport-consolidated'>Transport Consolidated</a>
-    <a id='project3' class="projects" *ngIf=projects routerLink='/business-website'>Business Website</a>
+    <a id='project1' class="projects" *ngIf=projects [@project1] routerLink='/crypto-portfolio'>Crypto Portfolio</a>
+    <a id='project2' class="projects" *ngIf=projects [@project2] routerLink='/transport-consolidated'>Transport Consolidated</a>
+    <a id='project3' class="projects" *ngIf=projects [@project3] routerLink='/business-website'>Business Website</a>
     <a  class='menuitem' routerLink='/contact'>Contact</a>
     
     
