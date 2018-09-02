@@ -13,14 +13,15 @@
 
 <nav *ngIf=menu [@slideInOut] class="navbar" id="menu">
 
-    <a href=# class="closemenu" id='menu' (click)="toggleMenu()">X</a>
+    <p href=# class="closemenu" id='menu' (click)="toggleMenu()">X</p>
     <a class='menuitem' routerLink='/'>Home</a>
     <a class='menuitem' routerLink='/about'>About</a>
-    <a class='menuitem' (click)='toggleProjects()'>Projects:</a> 
+    <a class='menuitem' (click)='toggleProjects()'>Projects:</a>
+    <a  class='menuitem' routerLink='/contact'>Contact</a>
     <a id='project1' class="projects" *ngIf=projects [@project1] routerLink='/crypto-portfolio'>Crypto Portfolio</a>
     <a id='project2' class="projects" *ngIf=projects [@project2] routerLink='/transport-consolidated'>Transport Consolidated</a>
     <a id='project3' class="projects" *ngIf=projects [@project3] routerLink='/business-website'>Business Website</a>
-    <a  class='menuitem' routerLink='/contact'>Contact</a>
+    
     
     
 </nav>

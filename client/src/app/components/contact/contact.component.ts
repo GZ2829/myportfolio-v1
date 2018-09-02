@@ -34,15 +34,16 @@ import { HttpClient } from '@angular/common/http'
     ])
   ]
 })
+
+
 export class ContactComponent implements OnInit {
-    success: string = null;
+    success: boolean = false;
     menu: boolean = false;
     projects: boolean = false;
 
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    
   }
 
  toggleMenu(){
@@ -66,13 +67,13 @@ export class ContactComponent implements OnInit {
        return this.http.post(`${url}/send`, data, )
        .subscribe(err => {
          if(err){
-          this.success === 'Email Failed'
+          this.success === false
          }
          else{
-           this.success === 'Email Sent Successfully'
+           this.success === true
          }
        })
-    
+       this.success === true
     }
   
     

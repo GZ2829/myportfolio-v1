@@ -9,7 +9,7 @@
     
     <nav *ngIf=menu [@slideInOut] class="navbar" id="menu">
 
-        <a href=# class="closemenu" id='menu' (click)="toggleMenu()">X</a>
+        <p href=# class="closemenu" id='menu' (click)="toggleMenu()">X</p>
         <a class='menuitem' routerLink='/'>Home</a>
         <a class='menuitem' routerLink='/about'>About</a>
         <a class='menuitem' (click)='toggleProjects()'>Projects:</a> 
@@ -20,6 +20,7 @@
         
         
     </nav>
+
       <h1>Contact Me:</h1>
     <form id='form'>
             <label for="contactName">Name: </label>
@@ -34,7 +35,7 @@
                 <textarea #message type="text-area" name="contactMessage" ng-model="nodemailer.message" required ></textarea>
                 <br/>
                 <button type="submit" (click)="sendMail(name.value, email.value, message.value)" class="btn btn-success">Send</button>
-            <h3 {{this.success ? }} ></h3>
+            <h3 *ngIf=success>Email Succesfully Sent</h3>
     </form>
 
 </div>
