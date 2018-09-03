@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     height: 100vh;
-    background: url(https://images.unsplash.com/photo-1516245834210-c4c142787335?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4c08d94fa3626ca948926d0211ccc7ac&auto=format&fit=crop&w=2849&q=80);
+    background: url(../../../assets/Background-Pictures/crypto-photo.jpeg);
     background-position-y: 20%;
     background-position-x: 30%;
 }
