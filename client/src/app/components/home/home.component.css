@@ -28,6 +28,17 @@
     margin-top: 1%;
 }
 
+.homebutton{
+    animation-name: menuButtonIntro;
+    animation-duration: 3s;
+}
+
+
+@keyframes menuButtonIntro{
+    0%{ position: relative; right: 100%; transform: rotate(540deg); opacity: 1;}
+    100%{ position: relative; right: 0%; transform: rotate(00deg); opacity: .5}
+}
+
 @media (max-width: 1024px) {
    .home{
        background-size: cover;
