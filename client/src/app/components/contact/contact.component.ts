@@ -65,6 +65,8 @@ export class ContactComponent implements OnInit {
       }
       
        return this.http.post(`${url}/send`, data, ).subscribe(err => {}) && alert('Email sent, thank you for your submission')
+
+       
     }
   
     

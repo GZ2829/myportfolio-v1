@@ -1,6 +1,10 @@
 <div class="businesspage">
 
-    <img (click)="toggleMenu()" class="homebutton" alt="Noimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Menu-thin-circular-outlined-button.svg/768px-Menu-thin-circular-outlined-button.svg.png" />
+    <div (click)="toggleMenu()" class="homebutton" >
+        <div class="homebuttonline"></div>
+        <div class="homebuttonline"></div>
+        <div class="homebuttonline"></div>
+    </div>
 
     <div class='projectinfo'>
             <h1 class="projecttitle">Business Website</h1>
@@ -22,7 +26,7 @@
         <p href=# class="closemenu" id='menu' (click)="toggleMenu()">X</p>
         <a class='menuitem' routerLink='/'>Home</a>
         <a class='menuitem' routerLink='/about'>About</a>
-        <a  class='menuitem' routerLink='/contact'>Contact</a>
+        <a class='menuitem' routerLink='/contact'>Contact</a>
         <a class='menuitem' (click)='toggleProjects()'>Projects:</a>
         <a id='project1' class="projects" *ngIf=projects [@project1] routerLink='/crypto-portfolio'>Crypto Portfolio</a>
         <a id='project2' class="projects" *ngIf=projects [@project2] routerLink='/transport-consolidated'>Transport Consolidated</a>

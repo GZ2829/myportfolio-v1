@@ -14,22 +14,36 @@
     background: rgba(0, 0, 0, 0.892);
     grid-column: 1/7;
     grid-row: 2/5;
-    height: 120%;
-    margin-left: 15%
+    height: 130%;
+    margin-left: 15%;
+    animation-name: ablurb;
+    animation-duration: 2s
+}
+@keyframes ablurb{
+    0%{ position: relative; bottom: -50%}
+    100%{ position: relative; bottom: 0%}
 }
 .para1{
+    font-family: 'Oxygen', sans-serif;
     position: initial;
-    line-height: 1.7em;
+    line-height: 1.5em;
     font-size: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 4%;
+    padding-right: 1%;
     text-align: left;
     color: bisque;
     grid-column: 2/-1;
     grid-row: 1/2;
+    animation-name: p1;
+    animation-duration: 2s;
+}
+@keyframes p1{
+    0%{ opacity: 0}
+    100%{opacity: 1;}
 }
 .para2{
-    line-height: 1.7em;
+    font-family: 'Oxygen', sans-serif;
+    line-height: 1.5em;
     font-size: 20px;
     padding-left: 5%;
     padding-right: 5%;
@@ -37,9 +51,12 @@
     color: bisque;
     grid-column: 1/-1;
     grid-row: 2/4;
+    animation-name: p1;
+    animation-duration: 2s;
 }
 
 .title{
+    font-family: 'Roboto Slab', serif;
     grid-column: 2/4;
     grid-row: 1/2;
     font-size: 40px;
@@ -52,4 +69,38 @@
     height: 200px;
     width: 250px;
     border-radius: 50%;
+    animation-name: p1;
+    animation-duration: 2s;
+}
+
+@media (max-width: 1024px) {
+    .aboutblurb{
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 100%;
+    }
+    .title{
+        grid-column: 1/4;
+        padding-left: 10%
+    }
+}
+
+@media(max-width: 768px){
+    .aboutblurb{
+        grid-row: 2/6;
+        margin-left: 2%
+    }
+    .title{
+        grid-row: 1/2
+    }
+    .para1{
+        font-size: 15px;
+    }
+    .para2{
+        font-size: 15px;
+    }
+    .headshot{
+        width: 150px;
+        height: 150px;
+    }
 }
