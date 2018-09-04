@@ -34,6 +34,8 @@
     padding-left: 3%;
     color: white;
     margin-top: 1%;
+    margin-bottom: 0;
+    height: 50%;
     animation-name: hname;
     animation-duration: 2s
 }
@@ -43,11 +45,53 @@
     animation-duration: 2.5s;
     background-color: black
 }
+.linkicon{
+    height: 50px;
+    width: 50px;
+}
+.giticon{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 22%;
+}
+.icons{
+    margin-top: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
 
+.giticon:hover {
+    animation: bounce .9s;
+}
+.linkicon:hover{
+    animation: bounce .9s;
+}
 
 @keyframes menuButtonIntro{
     0%{ position: relative; right: 100%; transform: rotate(540deg)}
     100%{ position: relative; right: 0%; transform: rotate(00deg)}
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
 }
 
 @media (max-width: 1024px) {
@@ -69,5 +113,33 @@
      text-align: left;
      
    }
-    
+}
+@media (max-width: 750px){
+    .icons{
+        grid-row: 5/6;
+    }
+}
+
+@media (max-width: 415px){
+    .home{
+        background-size: cover;
+        background-position-x: 50%;
+    }
+    .homename{
+        font-size: 40px;
+        padding-right: 5%;
+        grid-row: 2/3;
+        text-align: center;
+        align-self: end;
+    }
+    .homedescription{
+        font-size: 13px;
+        grid-row: 3/4;
+        margin-top: 0;
+        padding-right: 20%;
+        text-align: left;
+       }
+       .icons{
+        grid-row: 3/4;
+    }
 }

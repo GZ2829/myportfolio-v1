@@ -29,6 +29,12 @@ import { trigger,style,transition,animate } from '@angular/animations'
       transition(':leave', [
         animate('1000ms ease-in', style({transform: 'translateY(-700%)'}))
       ])
+    ]),
+    trigger('icons', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('2000ms ease-in', style({ opacity: 1 }))
+      ])
     ])
   ]
 })

@@ -7,3 +7,15 @@
     background-position-y: 20%;
     background-position-x: 30%;
 }
+
+@media (max-width: 600px){
+    #cryptopic1{
+        width: 200%
+    }
+    #cryptopic2{
+        width: 95%
+    }
+    #cryptopic3{
+        width: 100%
+    }
+}

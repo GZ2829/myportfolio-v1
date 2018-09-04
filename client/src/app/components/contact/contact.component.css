@@ -78,3 +78,14 @@ button[type=submit]:hover {
         padding-left: 45%
     }
 }
+
+@media (max-width: 600px){
+    #form{
+        grid-column: 1/6;
+        margin-left: 10%;
+        height: 70%;
+    }
+    h1{
+        font-size: 18px;
+    }
+}
