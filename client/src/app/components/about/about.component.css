@@ -14,7 +14,7 @@
     background: rgba(0, 0, 0, 0.892);
     grid-column: 1/7;
     grid-row: 2/5;
-    height: 130%;
+    height:  65vh;
     margin-left: 15%;
     animation-name: ablurb;
     animation-duration: 2s
@@ -77,11 +77,16 @@
     .aboutblurb{
         margin-left: 5%;
         margin-right: 5%;
-        height: 100%;
     }
     .title{
         grid-column: 1/4;
         padding-left: 10%
+    }
+    .para1{
+        font-size: 17px;
+    }
+    .para2{
+        font-size: 17px;
     }
 }
 
