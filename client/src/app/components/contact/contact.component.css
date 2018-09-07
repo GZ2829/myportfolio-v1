@@ -3,16 +3,45 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     height: 100vh;
-    background: linear-gradient(to right, rgb(22, 16, 16), rgb(154, 172, 158));
+    background: rgb(162, 170, 209);
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-position-y: 20%;
     background-position-x: 70%;
 }
 
 #form{
     padding: 10%;
-    background-color: beige;
+    background-color: rgb(115, 133, 211);;
     grid-row: 2/6;
     grid-column: 3/7;
+    animation-name: ablurb;
+    animation-duration: 1.5s;
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.introline{
+    opacity: 0;
+    animation-name: intro;
+    animation-duration: 3s
+}
+
+.contact{
+    opacity: 1;
+    animation-name: contact;
+    animation-duration: 4s;
+}
+
+@keyframes contact{
+    0%{position: relative; top: -50%; opacity: 0}
+    100%{position: relative; top: 0%; opacity: 1}
+}
+
+
+@keyframes intro{
+    0%{ opacity: 0}
+    50%{ opacity: 1}
+    100%{opacity: 0;}
 }
 
 label{
@@ -31,7 +60,8 @@ h1{
     margin-bottom: 0;
     align-self: center;
     justify-self: center;
-    color: beige
+    color: black;
+    
 }
 
 input[type=text],input[type=email], textarea {
@@ -64,6 +94,10 @@ button[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+@keyframes ablurb{
+    0%{ position: relative; bottom: -50%}
+    100%{ position: relative; bottom: 0%}
 }
 
 @media (max-width: 1024px){

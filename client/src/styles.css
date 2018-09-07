@@ -7,11 +7,11 @@ html, body{
 }
 
 .homebutton{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 80%;
-    width: 6.4vw;
+    width: 60%;
     grid-column: 8/-1;
     grid-row: 1/2;
     justify-self: center;
@@ -97,7 +97,7 @@ html, body{
 }
 
 
-#project1{
+#project1{ 
     animation-name: project1;
     animation-duration: 1s;
 }

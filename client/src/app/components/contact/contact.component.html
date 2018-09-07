@@ -9,6 +9,8 @@
         <div class="homebuttonline"></div>
         <div class="homebuttonline"></div>
     </div>
+
+    <h1 class="introline">Send me an Email!</h1>
   
     
     <nav *ngIf=menu [@slideInOut] class="navbar" id="menu">
@@ -26,7 +28,7 @@
         
     </nav>
 
-      <h1>Contact Me:</h1>
+      <h1 class="contact">Contact Me:</h1>
     <form id='form'>
             <label for="contactName">Name: </label>
                 <input #name type="text" name="contactName" ng-model="nodemailer.name" required autofocus>

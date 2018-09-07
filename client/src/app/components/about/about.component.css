@@ -14,7 +14,7 @@
     background: rgba(0, 0, 0, 0.892);
     grid-column: 1/7;
     grid-row: 2/5;
-    height:  120%;
+    height:  75vh;
     margin-left: 15%;
     animation-name: ablurb;
     animation-duration: 2s
@@ -64,7 +64,6 @@
     color: bisque
 }
 .headshot{
-    padding-left: 5%;
     padding-top: 5%;
     height: 200px;
     width: 250px;
@@ -75,6 +74,7 @@
 
 @media (max-width: 1024px) {
     .aboutblurb{
+        height:  100vh;
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -85,17 +85,17 @@
     }
     .para1{
         grid-column: 1/-1;
-        font-size: 20px;
+        font-size: 18px;
         grid-row: 2/3
     }
     .para2{
         grid-column: 1/-1;
-        font-size: 20px;
+        font-size: 18px;
         grid-row: 3/4;
     }
     .headshot{
-        height: 250px;
-        width: 300px;
+        height: 150px;
+        width: 200px;
         grid-column: 1/-1;
         justify-self: center;
         grid-row: 1/2

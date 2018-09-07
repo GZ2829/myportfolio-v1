@@ -7,6 +7,26 @@
     background-position-y: 59%;
     
 }
+.angular{
+    color: rgb(250, 6, 6);
+    font-family: 'Dancing Script', cursive;
+    grid-column: 1/6;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 3%;
+    margin-bottom: 0;
+    opacity: 0;
+    animation-name: intro;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@keyframes intro{
+    0%{ opacity: 0}
+    50%{ opacity: 1}
+    100%{opacity: 0;}
+}
 
 .homename{
     font-family: 'Dancing Script', cursive;
@@ -48,6 +68,8 @@
 .linkicon{
     height: 50px;
     width: 50px;
+    background-color: white;
+    border-radius: 22%;
 }
 .giticon{
     height: 50px;
@@ -141,5 +163,8 @@
        }
        .icons{
         grid-row: 3/4;
+    }
+    .angular{
+        font-size: 30px;
     }
 }
