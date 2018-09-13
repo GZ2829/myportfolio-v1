@@ -1,7 +1,7 @@
 {
   "name": "myportfolio",
   "version": "0.0.0",
-  "main": "server.js",
+  "main": "index.html",
   "scripts": {
     "ng": "ng",
     "build": "ng build",
@@ -13,7 +13,8 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "~6.1.1",
+    "@angular/cli": "~6.2.1",
+    "@angular/compiler-cli": "^6.1.0",
     "@angular-devkit/build-angular": "~0.7.0",
     "@angular/animations": "^6.1.6",
     "@angular/common": "^6.1.0",
@@ -36,7 +37,6 @@
   },
   "devDependencies": {
     "@angular/language-service": "^6.1.0",
-    "@angular/compiler-cli": "^6.1.0",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
