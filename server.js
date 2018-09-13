@@ -41,7 +41,7 @@ app.use(express.static(__dirname, '/client/dist')
 // // });
 
 app.route("/*", (req, res) => {
-    res.redirect(path.join(__dirname + 'client/dist/index.html'));
+    res.redirect(path.join(__dirname + '/client/dist/index.html'));
 });
 
 
