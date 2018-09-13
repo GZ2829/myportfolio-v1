@@ -55,7 +55,7 @@ export class ContactComponent implements OnInit {
   }
 
   sendMail(name, email, message){
-        let url = 'https://gz-portfolio.herokuapp.com'
+        let url = 'http://localhost:4040'
 
       const data = {
         name: name,
@@ -64,7 +64,13 @@ export class ContactComponent implements OnInit {
 
       }
       
-       return this.http.post(`${url}/send`, data, ).subscribe(err => {}) && alert('Email sent, thank you for your submission')
+       return this.http.post(`${url}/send`, data, ).subscribe(err => {
+         if(err){
+          return alert(err)
+         }else{
+          return alert('Email sent, thank you for your submission')
+         }
+       })
 
        
     }
