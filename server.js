@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 // Static Folder
-app.use(express.static(__dirname, './client/dist/myportfolio')
+app.use(express.static(__dirname, './dist/myportfolio')
 )
 
 // app.use(function (req, res, next) {
@@ -41,7 +41,7 @@ app.use(express.static(__dirname, './client/dist/myportfolio')
 // // });
 
 app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname + '/client/dist/myportfolio/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/myportfolio/index.html'));
 });
 
 
