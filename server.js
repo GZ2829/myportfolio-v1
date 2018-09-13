@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 // Static Folder
-app.use(express.static(__dirname, './dist/myportfolio')
+app.use(express.static('./dist/myportfolio')
 )
 
 // app.use(function (req, res, next) {
