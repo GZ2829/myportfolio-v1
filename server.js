@@ -69,6 +69,9 @@ app.post('/send', (req,res)=>{
                 user: process.env.DB_USER,
                 pass: process.env.DB_PASS
             },
+            tls:{
+                ciphers:'SSLv3'
+            }
         });
     
        
