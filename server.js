@@ -64,7 +64,7 @@ app.post('/send', (req,res)=>{
         let transporter = nodemailer.createTransport({
             host: 'smtp-mail.outlook.com',
             port: 587,
-            secure: true, 
+            secure: false, 
             auth: {
                 user: process.env.DB_USER,
                 pass: process.env.DB_PASS
