@@ -55,7 +55,7 @@ export class ContactComponent implements OnInit {
   }
 
   sendMail(name, email, message){
-        let url = 'http://localhost:4040'
+        let url = 'https://gz-portfolio.herokuapp.com/'
 
       const data = {
         name: name,
