@@ -71,14 +71,23 @@
     animation-name: p1;
     animation-duration: 2s;
 }
+#menuButton{
+    width: 14vh
+}
 
 @media (max-width: 1024px) {
+    #menuButton{
+        grid-row: 1/2;
+        grid-column: 8/9;
+        width: 13vh
+    }
     .aboutblurb{
         height:  100vh;
         margin-left: 5%;
         margin-right: 5%;
     }
     .title{
+        font-size: 30px;
         align-self: end;
         grid-column: 1/4;
         padding-left: 10%
@@ -123,17 +132,49 @@
 }
 
 @media(max-width: 500px){
+    .aboutpage{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 100vh;
+        background: url(../../../assets/Background-Pictures/about-background.jpeg);
+        background-position-x: 39%;
+    }
+    #menuButton{
+        width: 8vh;
+        height: 10vh;
+        grid-row: 6/7;
+        grid-column: 1/-1;
+         display: inline-flex;
+    }
+    #menu{
+        z-index: 4;
+        grid-row: 1/-1
+    }
+    .aboutblurb{
+        opacity: .9;
+        margin: 0;
+        grid-row: 1/-1;
+        grid-column: 1/-1;
+    }
     .title{
-        font-size: 25px;
-        align-self: end;
+        grid-row: 1/1;
+        font-size: 20px;
+        align-self: baseline;
+        z-index: 2;
+        justify-items: top;
     }
     .para1{
-        font-size: 12px;
+        font-size: 15px;
+        grid-row: 3/4;
     }
     .para2{
-        font-size: 12px;
+        font-size: 15px;
+        grid-row: 4/5;
     }
     .headshot{
+        opacity: 2;
+        grid-row: 2/3;
         width: 100px;
         height: 100px;
     }

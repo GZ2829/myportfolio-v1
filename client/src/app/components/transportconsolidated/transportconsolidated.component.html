@@ -1,10 +1,6 @@
 <div class="transportpage">
 
-    <div (click)="toggleMenu()" class="homebutton" >
-        <div class="homebuttonline"></div>
-        <div class="homebuttonline"></div>
-        <div class="homebuttonline"></div>
-    </div>
+    <img src='../../../assets/menu.png' (click)="toggleMenu()" class="homebutton" />
 
     <div class='projectinfo'>
             <h1 class="projecttitle">Transport Consolidated</h1>
@@ -13,12 +9,13 @@
             <img class="projectpic3" style="width: 100%" src='../../../assets/transporthome.png'/>
     
             <p class='projectbio'> Transport Consolidated is a Full stack web application using the MERN stack. 
-                It was designed as a solution for businesses finding trucks to move there loads. A modern front end design with 
-                a backend built on newer technoliges, it has the potential to grow to a production ready webservice.
-                This is an ever growing project and will continue to be updated.
+                It was designed as a solution for businesses finding trucks to move there products. Created to be 
+                user friendly with a simple yet elegant design, while offereing a nonSQL database solution. It is currently in
+                a testing stage, so feel free to use dummy information to give it a try. I am excited about the progress of this
+                project and look foward to adding updates.
             </p>
     
-            <a target="external" class="projectlink" href="http://cryptoportfolio.surge.sh/">Visit the site --></a>
+            <a target="external" class="projectlink" href="https://transport-consolidated-gz.herokuapp.com/">Visit the site --></a>
     
     </div>
   
@@ -32,9 +29,7 @@
         <a class='menuitem' (click)='toggleProjects()'>Projects:</a> 
         <a id='project1' class="projects" *ngIf=projects [@project1] routerLink='/crypto-portfolio'>Crypto Portfolio</a>
         <a id='project2' class="projects" *ngIf=projects [@project2] routerLink='/transport-consolidated'>Transport Consolidated</a>
-        <a id='project3' class="projects" *ngIf=projects [@project3] routerLink='/business-website'>Business Website</a>
-       
-        
+        <a id='project3' class="projects" *ngIf=projects [@project3] routerLink='/business-website'>Business Website</a> 
         
     </nav>
 </div>

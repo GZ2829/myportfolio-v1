@@ -4,11 +4,13 @@
 <h1 class="homename">Gregory Zucchero</h1>
 <h3 class="homedescription">Web Developer in the MERN/MEAN Stack</h3>
 
-<div (click)="toggleMenu()" class="homebutton" >
+<!-- <div (click)="toggleMenu()" class="homebutton" >
     <div class="homebuttonline"></div>
     <div class="homebuttonline"></div>
     <div class="homebuttonline"></div>
-</div>
+</div> -->
+
+<img src='../../../assets/menu.png' (click)="toggleMenu()" class="homebutton" />
 
 
 <nav *ngIf=menu [@slideInOut] class="navbar" id="menu">

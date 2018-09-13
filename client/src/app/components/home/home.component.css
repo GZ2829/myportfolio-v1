@@ -136,11 +136,57 @@
      
    }
 }
-@media (max-width: 750px){
+@media (max-width: 800px){
+    .homename{
+        font-size: 55px;
+        padding-right: 5%;
+        grid-column: 2/7;
+        grid-row: 2/3;
+        text-align: center;
+        align-self: end;
+    }
+    .homedescription{
+        font-size: 20px;
+        grid-row: 3/4;
+        margin-top: 0;
+        padding-left: 12%;
+    }
     .icons{
-        grid-row: 5/6;
+        grid-row: 3/4;
+    }
+    .angular{
+        font-size: 35px;
     }
 }
+@media (max-width: 750px){
+    .icons{
+        grid-row: 3/4;
+    }
+}
+@media (max-width: 615px){
+    .icons{
+        grid-row: 4/5;
+    }
+    .homename{
+        font-size: 45px;
+        padding-right: 5%;
+        grid-column: 2/7;
+        grid-row: 2/3;
+        text-align: left;
+        align-self: end;
+    }
+    .homedescription{
+        font-size: 20px;
+        grid-row: 3/4;
+        margin-top: 0;
+        padding-right: 20%;
+        text-align: left;
+       }
+       .angular{
+        font-size: 40px;
+    }
+}
+
 
 @media (max-width: 415px){
     .home{
@@ -155,7 +201,7 @@
         align-self: end;
     }
     .homedescription{
-        font-size: 13px;
+        font-size: 12px;
         grid-row: 3/4;
         margin-top: 0;
         padding-right: 20%;
