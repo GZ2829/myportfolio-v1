@@ -64,7 +64,7 @@ export class ContactComponent implements OnInit {
 
       }
       
-       return this.http.post(`${url}/send`, data, ).subscribe(err => {
+       return this.http.post(`${url}/send`, data ).subscribe(err => {
          if(err){
           return alert(err)
          }else{

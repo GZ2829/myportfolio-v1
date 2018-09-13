@@ -32,19 +32,21 @@
 
       <h1 class="contact">Contact Me:</h1>
     <form id='form'>
-            <label for="contactName">Name: </label>
-                <input #name type="text" name="contactName" ng-model="nodemailer.name" required autofocus>
+            <label for="name">Name: </label>
+                <input #name type="text" name="name" ng-model="nodemailer.name" required autofocus>
                 <br/>
                 <br/>
-            <label for="contactEmail">Email: </label>
-                <input #email type="email" name="contactEmail" ng-model="nodemailer.email" required>
+            <label for="email">Email: </label>
+                <input #email type="email" name="email" ng-model="nodemailer.email" required>
                 <br>
                 <br/>
-            <label for="contactMessage">Message: </label>
-                <textarea #message type="text-area" name="contactMessage" ng-model="nodemailer.message" required ></textarea>
+            <label for="message">Message: </label>
+                <textarea #message type="text-area" name="message" ng-model="nodemailer.message" required ></textarea>
                 <br/>
-                <button type="submit" (click)="sendMail(name.value, email.value, message.value)" class="btn btn-success">Send</button>
-            <h3 *ngIf=success>Email Succesfully Sent</h3>
+                <button type="submit" class="btn btn-success" (click)="sendMail(name.value, email.value, message.value)">Send</button>
+            <!-- <h3 *ngIf=success>Email Succesfully Sent</h3> -->
+            <!-- (click)="sendMail(name.value, email.value, message.value)" -->
+            <!-- method="POST" action="https://formspree.io/gzucchero24@gmail.com" -->
     </form>
 
 </div>
