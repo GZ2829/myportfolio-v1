@@ -70,7 +70,8 @@ app.post('/send', (req,res)=>{
                 pass: process.env.DB_PASS
             },
             tls:{
-                ciphers:'SSLv3'
+                ciphers:'SSLv3',
+                rejectUnauthorized: false
             }
         });
     
