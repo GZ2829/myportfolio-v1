@@ -44,9 +44,6 @@
                 <textarea #message type="text-area" name="message" ng-model="nodemailer.message" required ></textarea>
                 <br/>
                 <button type="submit" class="btn btn-success" (click)="sendMail(name.value, email.value, message.value)">Send</button>
-            <!-- <h3 *ngIf=success>Email Succesfully Sent</h3> -->
-            <!-- (click)="sendMail(name.value, email.value, message.value)" -->
-            <!-- method="POST" action="https://formspree.io/gzucchero24@gmail.com" -->
     </form>
 
 </div>

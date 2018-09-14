@@ -195,18 +195,23 @@
     }
     .homename{
         font-size: 40px;
+        grid-column: 1/-1;
         padding-right: 5%;
         grid-row: 2/3;
         text-align: center;
         align-self: end;
+        padding-right: 25%;
     }
     .homedescription{
-        font-size: 12px;
-        grid-row: 3/4;
-        margin-top: 0;
-        padding-right: 20%;
-        text-align: left;
-       }
+    font-size: 10.5px;
+    -ms-grid-row: 3;
+    grid-column: 1/-1;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    margin-top: 0;
+    padding-right: 20%;
+    text-align: left;
+    }
        .icons{
         grid-row: 3/4;
     }
