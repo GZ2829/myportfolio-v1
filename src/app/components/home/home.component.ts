@@ -44,11 +44,14 @@ export class HomeComponent implements OnInit {
 
   
 
-  constructor() { }
+  constructor() { 
+
+  }
 
   ngOnInit() {
-    
+
   }
+  
   toggleMenu(){
     this.menu = !this.menu;
   }
