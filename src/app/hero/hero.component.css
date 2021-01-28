@@ -1,21 +1,24 @@
-.hero{
-    height: 100vh;
-    width: 100vw;
+#hero{
+    height: 100%;
+    width: 100%;
 }
 
-.hero::after{
-    height: 100vh;
-    width: 100vw;
+.darkOverlay{
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .5);
-    z-index: 5;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 10;
 }
 
 .videoContainer {
-    height: 100vh;
-    width: 100vw;
+    position: absolute;
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     bottom: 0;
@@ -24,13 +27,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 4;
-    }
-    #hero {
+    z-index: 5;
+}
+
+.heroText{
     position: relative;
-    }
-    iframe {
-    /* optional */
-        height: 100vh;
-        width: 100vw;
-    }
+    max-width: 35%;
+    margin: 10% auto 0px;
+    height: auto;
+    color: white;
+    z-index: 15;
+}
