@@ -2,38 +2,6 @@
 html, body{
     height: 100%;
     margin:0; padding:0;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.homebutton{
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100px;
-    width: 100px;
-    grid-column: 8/-1;
-    grid-row: 1/2;
-    justify-self: center;
-    align-self: center;
-    transition-duration: .4s;
-    z-index: 0;
-    border-color: white;
-    border-style: solid;
-    border-radius: 50%;
-    background-color: black
-}
-.homebuttonline{
-    width: 40%;
-    height: 5%;
-    background-color: white;
-    align-self: center;
-}
-
-.homebutton:hover{
-    opacity: 1;
-    cursor: pointer;
-    transform: rotate(90deg)
 }
 
 .navbar{
