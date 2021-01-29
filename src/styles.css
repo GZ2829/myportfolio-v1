@@ -4,6 +4,27 @@ html, body{
     margin:0; padding:0;
 }
 
+@font-face {
+    font-family: 'Abril Regular';
+    src: url('/src/assets/Font/AbrilFatface-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Merriweather Regular';
+    src: url('/src/assets/Font/Merriweather-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'Inter Semibold';
+    src: url('/src/assets/Font/Inter-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('/src/assets/Font/Inter-Regular.ttf');
+}
+
 .navbar{
     grid-column: 7/-1;
     grid-row: 1/-1;

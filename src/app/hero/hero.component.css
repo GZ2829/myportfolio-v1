@@ -15,6 +15,10 @@
     z-index: 10;
 }
 
+video{
+    object-fit: fill;
+}
+
 .videoContainer {
     position: absolute;
     height: 100%;
@@ -32,9 +36,26 @@
 
 .heroText{
     position: relative;
-    max-width: 35%;
+    max-width: 85%;
     margin: 10% auto 0px;
     height: auto;
     color: white;
     z-index: 15;
+    text-align: center;
+}
+
+.heroTitle{
+    font-family: 'Inter Semibold', serif;
+    font-size: 60px;
+    letter-spacing: 1.25px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.heroSubTitle{
+    font-family: 'Inter Regular', serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-top: 0px;
 }
